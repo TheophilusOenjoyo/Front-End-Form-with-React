@@ -1,0 +1,38 @@
+<div className="bg-gray-50 min-h-screen">
+      <CustomNavbar />
+      <SubHeaderBar />
+
+      {/* Main Layout */}
+      <div className="flex relative mt-[130px]"> {/* Adjust top offset based on your navbar height */}
+
+        {/* Left Drawer */}
+        <div className="fixed top-[130px] left-0 w-1/5 h-[calc(100vh-130px)] bg-white border-r overflow-y-auto z-10">
+          <LeftDrawer
+            addQuestion={addQuestionToSection}
+            addSection={addSection}
+            selectedSection={selectedSectionIndex}
+          />
+        </div>
+
+        {/* Middle Form */}
+        <div className="flex-1 ml-[20%] mr-[300px] h-[calc(100vh-130px)] overflow-y-auto px-4">
+          <MiddleForm
+            formTitle={formTitle}
+            setFormTitle={changeTitle}
+            formSections={formSections}
+            setFormSections={setFormSections}
+            setSelectedSectionIndex={setSelectedSectionIndex}
+            removeSection={removeSection}
+            removeQuestion={removeQuestion}
+          />
+        </div>
+
+        {/* Right Drawer */}
+        <div className="fixed top-[130px] right-0 w-[300px] h-[calc(100vh-130px)] bg-white border-l overflow-y-auto z-10">
+          <RightDrawer
+            formSections={formSections}
+            formTitle={formTitle}
+          />
+        </div>
+      </div>
+    </div>
