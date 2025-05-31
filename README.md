@@ -45,4 +45,4 @@ npm run dev
 ```
 
 ## 📌 Notes
-This project was built as part of an internship assessment. Tailwind CSS and MUI were both used to speed up styling and component layout. The project uses Vite for lightning-fast development experience. The main challenge was to implement a flexible form generator that previews data structure and UI together in real time.
+This project was built as part of an internship assessment. I had only learned React, MUI, and Tailwind CSS shortly before working on this, and I completed it in just three days total. Because of that, the code might be not the best, a bit unorganized or unstructured — but it's all part of my learning progress and growth. Tailwind CSS and MUI were both used to speed up styling and component layout. The project uses Vite for a fast development experience. The main challenge was to implement a flexible form generator that previews data structure and UI together in real time.
